@@ -1,7 +1,9 @@
 
-# Area
+# Area 
 
 A project involving web development, mobile application development and server development with a free choice for the technologies to use.
+
+(removed secrets, so the project does not work at the moment)
 
 For the web we decided to use React
 The mobile application was developped using React Native
