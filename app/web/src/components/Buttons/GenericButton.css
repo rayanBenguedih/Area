@@ -1,0 +1,25 @@
+.generic-button-style {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding: 0.7rem 1.2rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    background-color: #e6e6e6;
+    transition: background-color 300ms;
+    user-select: none;
+    color: black;
+    cursor: pointer;
+}
+
+.generic-button-style:hover {
+    background-color: #d7d7d7;
+}
+
+a.generic-button-style {
+    text-decoration: none;
+    display: block;
+    width: max-content;
+}

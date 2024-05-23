@@ -1,0 +1,49 @@
+.home {
+    height: 100vh;
+}
+
+.home .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content h1 {
+    color: rgb(160, 115, 202);
+    font-weight: bold; font-size: 5rem; text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+.home .content h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.home .content .flex-grid {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    font-size: 1.5rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.home .content .flex-grid li {
+    list-style-position: inside;
+    flex: 1 1 300px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.home .content .flex-grid li::marker {
+    font-weight: bold;
+}

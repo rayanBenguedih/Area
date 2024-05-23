@@ -1,0 +1,59 @@
+.AREA-form {
+    user-select: none;
+    border-radius: 10px;
+    position: relative;
+    padding: 3rem;
+    background-color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.AREA-form h1 span {
+    color: rgb(160, 115, 202);
+}
+
+.AREA-form h1 {
+    font-size: 3rem;
+    margin-top: 10px; margin-bottom: 10px;
+    text-align: center;
+}
+
+.all-form-select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; margin-bottom: 20px;
+}
+
+.area-name input {
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 1px; font-size: 1.3rem;
+    width: 80%; height: 1.4rem;
+    outline: none; border: none;
+    color: rgb(160, 160, 160);
+    padding: 0.5rem 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(160,115,202,1) 0%, rgba(170,115,210,0.2) 100%);
+}
+
+.select-part {
+    text-align: center;
+    width: 200px;
+    padding: 30px 3.5rem;
+}
+
+.select-part h2 {
+    margin-bottom: 10px;
+}
+
+.area-form-buttons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}

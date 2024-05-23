@@ -1,0 +1,62 @@
+.userprofile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.userprofile .navbar {
+    position: initial !important;
+}
+
+.userprofile .container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userprofile .content {
+    width: 70%;
+    height: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userprofile .profile-part, .userprofile .oauth-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.userprofile .user-info {
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    user-select: none;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.userprofile .oauth-part a {
+    margin: 0 1rem;
+}
+
+.userprofile hr {
+    width: 80%;
+    border: none;
+    margin: 4rem 0;
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(160,115,202,1) 0%, rgba(170,115,210,0.2) 100%)
+}

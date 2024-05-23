@@ -1,0 +1,59 @@
+version: "3.8"
+
+services:
+    mysqldb:
+        image: mysql:latest
+        restart: on-failure
+        expose:
+            - 3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=area-root
+            - MYSQL_DATABASE=areadb
+            - MYSQL_USER=area-admin
+            - MYSQL_PASSWORD=area-admin-pwd
+        volumes:
+            - ./server/:/docker-entrypoint-initdb.d
+
+    server:
+        build:
+            context: server/
+            dockerfile: Dockerfile
+        depends_on:
+            - mysqldb
+        restart: on-failure
+        ports:
+            - 8080:8080
+        links:
+            - mysqldb
+
+    client_mobile:
+         build:
+             context: app/mobile/mApp
+             dockerfile: Dockerfile
+         restart:
+             on-failure 
+         volumes: 
+            - shared-tmpss
+
+    client_web:
+        build:
+            context: app/web/
+            dockerfile: Dockerfile
+        depends_on:
+            - server
+        restart: on-failure
+        ports:
+            - 8081
+        links:
+            - mysqldb
+        volumes: 
+            - shared-tmpss
+
+
+volumes:
+    shared-tmpss:
+        driver: local
+        driver_opts:
+            type: 'none'
+            o: 'bind'
+            device: '/home/test'

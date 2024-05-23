@@ -1,0 +1,34 @@
+{
+  "name": "area",
+  "version": "1.0.0",
+  "description": "AREA",
+  "main": "server.js",
+  "scripts": {
+    "start": "APP_ENV=prod node server.js",
+    "dev": "APP_ENV=dev nodemon server.js"
+  },
+  "author": "gregoirebiendine",
+  "license": "ISC",
+  "dependencies": {
+    "@d-fischer/passport-twitch": "^1.0.5",
+    "@discordjs/rest": "^1.2.0",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "discord.js": "^14.5.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "public-ip": "^6.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

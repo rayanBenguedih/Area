@@ -1,0 +1,44 @@
+.dashboard {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.dashboard .navbar {
+    position: initial !important;
+}
+
+.dashboard .container {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    /* box-sizing: border-box; */
+}
+
+.dashboard .areas-list, .dashboard .empty-areas-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.dashboard #btn-create-area {
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+}
+
+.dashboard .empty-areas-list p {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 2rem;
+}

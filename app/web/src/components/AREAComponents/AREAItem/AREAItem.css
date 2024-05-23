@@ -1,0 +1,74 @@
+.area-item {
+    padding: 1.5rem 3rem;
+    margin: 0.8rem;
+    width: 30vw;
+    background: #e6e6e6;
+    font-size: 1.5rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+.area-item p {
+    margin: 0;
+}
+
+.area-item .label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area-item .btn-dropdown, .area-item .btn-delete {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(30, 30, 3°);
+    transition: color 0.5s;
+}
+
+.area-item .interaction button:hover {
+    color: rgb(100, 100, 100);
+}
+
+.area-item .dropdown-container {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.area-item .dropdown-content {
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-item .dropdown-content .area-sep-arrow {
+    margin: 0 0.5rem;
+}
+
+.area-item .area-info {
+    margin: 0 1rem;
+}
+
+.area-item .area-info .area-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.area-item .area-info .area-label {
+    text-align: center;
+}
